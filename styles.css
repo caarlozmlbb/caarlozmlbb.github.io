@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input[type="number"] {
+    width: 200px;
+    padding: 5px;
+}
+
+form .boton {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+div {
+    margin-top: 30px;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: linear-gradient(95deg,#0f0101,#221d1d);
+    color: white;
+}
+
+table td, table th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select {
+    margin: 20px auto;
+    display: block;
+}
+form .boton:hover {
+    transform: translateY(-1px);
+    background-color: transparent;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+.boton:hover{
+    transform: translateY(-4px);
+    background: transparent;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    
+    nav {
+        margin: 10px auto;
+    }
+    
+    h1 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    form input[type="number"] {
+        width: 80%;
+        max-width: 200px;
+    }
+    
+    table td, table th {
+        font-size: 12px;
+        padding: 5px;
+    }
+    
+    table caption {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    
+    select {
+        margin: 10px auto;
+    }
+}
+
+/* Estilos para pantallas medianas y grandes */
+@media (min-width: 601px) {
+    header {
+        padding: 15px 30px;
+    }
+    
+    .logo {
+        width: 100px;
+    }
+    
+    nav {
+        margin-left: auto;
+    }
+    
+    h1 {
+        margin-top: 50px;
+    }
+    
+    form input[type="number"] {
+        width: 200px;
+        padding: 5px;
+    }
+    
+    table td, table th {
+        padding: 10px;
+    }
+    
+    table caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    select {
+        margin: 20px auto;
+        display: block;
+    }
+}
